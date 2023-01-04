@@ -1,3 +1,2 @@
 selenium
 webdriver-manager   
-apt-get install -y chromium-browser
