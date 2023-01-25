@@ -12,7 +12,7 @@ chrome_options.add_argument("--incognito")
 chrome_options.add_argument("--headless")
 chrome_options.add_argument("--no-sandbox")
 chrome_options.add_argument("--disable-dev-shm-usage")
-navegador = webdriver.Chrome(service=Service(ChromeDriverManager(version='108.0.5359.71').install()), options=chrome_options)
+navegador = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
 
 navegador.get("https://www.google.com.br/")
 print(navegador.title)
