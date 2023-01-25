@@ -10,3 +10,4 @@ myDriver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), op
 
 myDriver.get("https://www.google.com")
 print(myDriver.title)
+# teste
