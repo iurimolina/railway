@@ -9,4 +9,4 @@ chrome_options.add_argument("--disable-dev-shm-usage")
 myDriver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
 
 myDriver.get("https://www.google.com")
-print("Deploy Feito!!!")
+print(myDriver.title)
