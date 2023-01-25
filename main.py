@@ -18,6 +18,6 @@ navegador.get("https://www.google.com.br/")
 #print(navegador.title)
 
 navegador.find_element('xpath', '/html/body/div[1]/div[3]/form/div[1]/div[1]/div[1]/div/div[2]/input').send_keys("instagram", Keys.ARROW_DOWN)
-navegador.find_element('xpath', '//*[@id="rso"]/div[1]/div/div/div/div/div/div/div[1]/a/h3').click()
+navegador.find_element('xpath', '//*[@id="rso"]/div[1]/div/div/div/div/div/div/div[1]/a').click()
 print("ESAJ")
 navegador.close()
