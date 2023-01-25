@@ -13,5 +13,5 @@ chrome_options.add_argument("--disable-dev-shm-usage")
 navegador = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
 
 
-navegador.get("https://esaj.tjms.jus.br/esaj")
+navegador.get("https://www.google.com.br/")
 print("OK")
