@@ -12,10 +12,7 @@ chrome_options.add_argument("--incognito")
 chrome_options.add_argument("--headless")
 chrome_options.add_argument("--no-sandbox")
 chrome_options.add_argument("--disable-dev-shm-usage")
-navegador = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
+navegador = webdriver.Chrome(service=Service(ChromeDriverManager(version='108.0.5359.71').install()), options=chrome_options)
 
-navegador.set_page_load_timeout(60)
 navegador.get("https://www.tjms.jus.br/")
-
-
-print("OK")
+print(navegador.title)
