@@ -16,3 +16,4 @@ navegador = webdriver.Chrome(service=Service(ChromeDriverManager(version='108.0.
 
 navegador.get("https://www.tjms.jus.br/")
 print(navegador.title)
+navegador.close()
