@@ -14,4 +14,8 @@ navegador = webdriver.Chrome(service=Service(ChromeDriverManager().install()), o
 
 
 navegador.get("https://www.google.com.br/")
+navegador.find_element('xpath', '/html/body/div[1]/div[3]/form/div[1]/div[1]/div[1]/div/div[2]/input').send_keys("@esaj tjms", Keys.ARROW_DOWN)
+navegador.find_element('xpath', '/html/body/div[1]/div[3]/form/div[1]/div[1]/div[4]/center/input[1]').click()
+navegador.find_element('xpath', '//*[@id="rso"]/div[1]/div/div/div/div/div/div/div[1]/a/h3').click()
+
 print("OK")
